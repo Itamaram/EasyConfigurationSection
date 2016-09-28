@@ -3,3 +3,4 @@ obj/
 packages/
 .vs/
 _ReSharper*/
+*.csproj.user
