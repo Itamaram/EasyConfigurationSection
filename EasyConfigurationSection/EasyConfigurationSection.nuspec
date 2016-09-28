@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>EasyConfigurationSection</id>
+    <version>1.0</version>
+    <title>EasyConfigurationSection</title>
+    <authors>Itamar Amith</authors>
+    <owners>Itamar Amith</owners>
+    <projectUrl>https://github.com/Itamaram/EasyConfigurationSection/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>An easy way to read custom configuration</description>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>ConfigurationSection ConfigurationElement Configuration config app.config web.config</tags>
+  </metadata>
+</package>

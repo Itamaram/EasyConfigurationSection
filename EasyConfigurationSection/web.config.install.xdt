@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <configSections xdt:Transform="InsertBefore(/configuration/*[1])" />
+  <configSections xdt:Locator="XPath(/configuration/configSections[last()])">
+    <section name="EasyConfiguration" type="EasyConfigurationSection.EasyConfigurationSection, EasyConfigurationSection" xdt:Locator="Match(type)" xdt:Transform="InsertIfMissing" />
+  </configSections>
+  <configSections xdt:Transform="RemoveAll" xdt:Locator="Condition(count(*)=0)" />
+  <EasyConfiguration xdt:Transform="InsertAfter(/configuration/configSections[last()])" >
+  </EasyConfiguration>
+</configuration>
