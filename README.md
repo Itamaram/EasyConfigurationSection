@@ -2,8 +2,8 @@
 This package attempts to greatly reduce the (boilerplate) code required to add a custom configuration section to a project.
 Using EasyConfigurationSection, there's no need to create any object inherting from `ConfigurationSection` or `ConfigurationElement`. As long as your configuration object is deserialisable by `System.Xml.Serialization.XmlSerializer`, you're good to go! (Using your own custom parser is also supported)
 
-#Example
-##app.config
+# Example
+## app.config
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
@@ -17,7 +17,7 @@ Using EasyConfigurationSection, there's no need to create any object inherting f
   </EasyConfiguration>
 </configuration>
 ```
-##Configuration Object Definition
+## Configuration Object Definition
 ```cs
 public class Foo
 {
@@ -25,11 +25,11 @@ public class Foo
     public string Content { get; set; }
 }
 ```
-##Consumption code
+## Consumption code
 ```cs
 new EasyConfiguration().GetSection<Foo>("MyConfiguration").Content //returns "Bar";
 ```
 
-#More features
+# More features
 It is possible to declare mlutiple sections under the `configSections` element, and then simply load them up via `new EasyConfiguration(name)`. Each `EasyConfiguration` can in turn contain several of its own sections.
 Note: If no name is provided, the default `"EasyConfiguration"` is used, as in the above example
