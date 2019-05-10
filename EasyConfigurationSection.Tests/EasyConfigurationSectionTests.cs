@@ -1,5 +1,4 @@
-﻿using System;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace EasyConfigurationSection.Tests
 {
@@ -20,7 +19,7 @@ namespace EasyConfigurationSection.Tests
         [Test]
         public void UndefinedSection()
         {
-            Assert.Throws<NullReferenceException>(() => new EasyConfiguration("SectionThatDoesntExist"));
+            Assert.DoesNotThrow(() => new EasyConfiguration("SectionThatDoesntExist"));
         }
     }
 }
